@@ -45,17 +45,27 @@ When the time arrives, both parties join the appointment and communicate over Vi
 
 Copy example.env to .env and fill the following variables:
 
-### Messaging API
+### Nexmo Credentials
 
 NEXMO_API_KEY: Retrieve from your [Vonage Communication account](https://dashboard.nexmo.com/sign-in)  
-NEXMO_API_SECRET: Retrieve from your [Vonage Communication account](https://dashboard.nexmo.com/sign-in)  
-MESSAGING_SMS_FROM: The number you've purchased to send SMS from
+NEXMO_API_SECRET: Retrieve from your [Vonage Communication account](https://dashboard.nexmo.com/sign-in)
 
 ### Video API
 
 OPENTOK_API_KEY: Retrieve from your [Vonage Video account](https://www.vonage.com/communications-apis/video/)  
 OPENTOK_API_SECRET: Retrieve from your [Vonage Video account](https://www.vonage.com/communications-apis/video/)  
 OPENTOK_SESSION_MEDIA_MODE: Session mode- routed or relayed
+
+### Messaging API
+
+MESSAGING_SMS_FROM: The number you've purchased to send SMS from
+MESSAGING_WA_FROM: The number assigned to your Whatsapp Manager account you want to send Whatsapp messages from
+MESSAGING_WA_NAMESPACE: The namespace ID for you Whatsapp templates
+MESSAGING_WA_TEMPLATE: The template name of your Whatsapp template for appointment reminders. It must have a media/image header, a body with 3 parameters (topic, date, time), an optionak text-only footer and q quick reply button with a dynamic link (link parameter will be autofilled). The dynamic link should lead to your host server, e.g. https://yourdomain.com/video endpoint.
+
+### Unsplash
+
+UNSPLASH_ACCESS_KEY: Create a free [Unsplash developer account](https://unsplash.com/developers) and put your access key into this field. It will allow for Whatsapp messages with an image header to be automatically selected by searching unsplash for images of the appointment name.
 
 ### App behavior
 
