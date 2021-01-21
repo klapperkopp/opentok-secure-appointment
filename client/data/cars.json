@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "card_title": "BMW i3",
+    "card_tags": [
+      "EZ 11/15",
+      "170 PS",
+      "Elektro",
+      "Automatik",
+      "30.700km",
+      "12,9l/100km (komb.)",
+      "0g CO2/km"
+    ],
+    "card_price": "14.590€ (inkl. MwSt.)",
+    "card_location": "Berlin, Germany",
+    "card_description": "i3 (60 Ah) CONNECTED-DRIVE NAVI KAMERA PDC uvm.",
+    "card_appointment_button_text": "Videotermin buchen",
+    "card_image_url": "https://img.hey.car/unsafe/480x/filters:quality(90):no_upscale()/https://cdn.hey.car/images/cas/6dc23b11acedc0ea2848bc372854f97a/original.jpg"
+  },
+  {
+    "id": 2,
+    "card_title": "BMW i3",
+    "card_tags": [
+      "EZ 10/13",
+      "170 PS",
+      "Elektro",
+      "Automatik",
+      "36.000km",
+      "0l/100km (komb.)",
+      "0g CO2/km"
+    ],
+    "card_price": "14.590€ (inkl. MwSt.)",
+    "card_location": "Hamburg, Germany",
+    "card_description": "i3 60Ah | VOLLAUSSTATTUNG | 8-Fach Alu |Garantie",
+    "card_appointment_button_text": "Videotermin buchen",
+    "card_image_url": "https://img.hey.car/unsafe/480x/filters:quality(90):no_upscale()/https://cdn.hey.car/images/cas/c48beb948fc0ce19a52cc73f199ceb5d/original.jpg"
+  },
+  {
+    "id": 3,
+    "card_title": "BMW i3",
+    "card_tags": [
+      "EZ 09/15",
+      "102 PS",
+      "Elektro",
+      "Automatik",
+      "45.600km",
+      "0l/100km (komb.)",
+      "0g CO2/km"
+    ],
+    "card_price": "16.350€ (inkl. MwSt.)",
+    "card_location": "Leipzig, Germany",
+    "card_description": "i3 REX - NAVI,PDC,SHZ,BLUETOOTH,TEMPOMAT",
+    "card_appointment_button_text": "Videotermin buchen",
+    "card_image_url": "https://img.hey.car/unsafe/480x/filters:quality(90):no_upscale()/https://cdn.hey.car/images/cas/a6c2e11caba6db551a6d49582c79fdfb/original.jpg"
+  },
+  {
+    "id": 4,
+    "card_title": "BMW i3",
+    "card_tags": [
+      "EZ 06/15",
+      "102 PS",
+      "Elektro",
+      "Automatik",
+      "36.781km",
+      "0l/100km (komb.)",
+      "0g CO2/km"
+    ],
+    "card_price": "16.839€ (inkl. MwSt.)",
+    "card_location": "Munich, Germany",
+    "card_description": "i3 Elektro Advanced Navi Schiebe/Hebedach",
+    "card_appointment_button_text": "Videotermin buchen",
+    "card_image_url": "https://img.hey.car/unsafe/480x/filters:quality(90):no_upscale()/https://cdn.hey.car/images/cas/dd592701d6d39e47797015a29a0e4b32/original.jpg"
+  }
+]
