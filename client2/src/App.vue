@@ -13,9 +13,9 @@ export default {
   name: "App",
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Pixel Cars",
+    title: `${process.env.VUE_APP_VIDEO_CALL_COMPANY_NAME}`,
     // all titles will be injected into this template
-    titleTemplate: "%s | My Awesome Webapp",
+    titleTemplate: `%s | Vonage`,
     meta: [
       // { charset: 'utf-8' },
       // { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -25,7 +25,7 @@ export default {
       },
       {
         name: "og:title",
-        content: `Pixel Cars`,
+        content: `${process.env.VUE_APP_VIDEO_CALL_COMPANY_NAME}`,
       },
       {
         name: "og:description",

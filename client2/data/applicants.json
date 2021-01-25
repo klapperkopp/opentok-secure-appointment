@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "card_title": "Tim Houlihan",
+    "card_tags": ["Strategic Account Manager"],
+    "card_price": "",
+    "card_location": "Munich, Germany",
+    "card_description": "Vonage EMEA",
+    "card_appointment_button_text": "Book Video Call",
+    "card_image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQF7mSbxW_X7Jw/profile-displayphoto-shrink_400_400/0/1516614165065?e=1617235200&v=beta&t=jgT0Klz6igk2NbZx14qOU5f4KsEFLeq3Wigh-dOLXvk"
+  },
+  {
+    "id": 2,
+    "card_title": "Lisa Ziegltrum",
+    "card_tags": ["Key Account Manager"],
+    "card_price": "",
+    "card_location": "Munich, Germany",
+    "card_description": "Vonage DACH+NL",
+    "card_appointment_button_text": "Book Video Call",
+    "card_image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHl1xDxLIYlUQ/profile-displayphoto-shrink_400_400/0/1545258331027?e=1617235200&v=beta&t=xocRw1KlH2t-hJcv0aCsz0u0tqZtxIuXyBlrU9is5bE"
+  },
+  {
+    "id": 3,
+    "card_title": "Tom Gosling",
+    "card_tags": ["Sales Development Representative"],
+    "card_price": "",
+    "card_location": "London, UK",
+    "card_description": "Vonage UK",
+    "card_appointment_button_text": "Book Video Call",
+    "card_image_url": "https://media-exp1.licdn.com/dms/image/C5603AQGDHaAJzw7rKw/profile-displayphoto-shrink_400_400/0/1589277512881?e=1617235200&v=beta&t=KIvspb1bUnimCKMy2GcIEqg1KBb7m0qGiXImrL9ln_Y"
+  },
+  {
+    "id": 4,
+    "card_title": "Toni Kuschan",
+    "card_tags": ["Customer Solution Architect"],
+    "card_price": "",
+    "card_location": "Berlin, Germany",
+    "card_description": "Vonage EMEA",
+    "card_appointment_button_text": "Book Video Call",
+    "card_image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQGtaacqxAA1Zw/profile-displayphoto-shrink_400_400/0/1573676834766?e=1617235200&v=beta&t=sQusj1LZAeQeNSi61D9uakyS51NHDJJOYP5Q7U_VBN4"
+  },
+  {
+    "id": 5,
+    "card_title": "Valeria Koltowski",
+    "card_tags": ["Partner Manager"],
+    "card_price": "",
+    "card_location": "Munich, Germany",
+    "card_description": "Vonage DACH + NL + CIS",
+    "card_appointment_button_text": "Book Video Call",
+    "card_image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHOtLFucfFI9g/profile-displayphoto-shrink_400_400/0/1598343744832?e=1617235200&v=beta&t=1FGDbHM9cDd8USM6FVgutAXcXV6DIZ3xhbARjV0gYMo"
+  },
+  {
+    "id": 6,
+    "card_title": "Pavel Salatiuk",
+    "card_tags": ["Country Manager"],
+    "card_price": "",
+    "card_location": "Berlin, Germany",
+    "card_description": "Vonage DACH",
+    "card_appointment_button_text": "Book Video Call",
+    "card_image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQF4rLzKwVIOKA/profile-displayphoto-shrink_400_400/0/1569601093433?e=1617235200&v=beta&t=TTGCT6YawTIOb1Bh8waloWuoQ-g2ihFUgo6C7CkiFRo"
+  },
+  {
+    "id": 7,
+    "card_title": "Paul Ringe",
+    "card_tags": ["Account Manager"],
+    "card_price": "",
+    "card_location": "Berlin, Germany",
+    "card_description": "Vonage DACH",
+    "card_appointment_button_text": "Book Video Call",
+    "card_image_url": "https://media-exp1.licdn.com/dms/image/C4E03AQFW56D2kPGUaw/profile-displayphoto-shrink_400_400/0/1610726962274?e=1617235200&v=beta&t=w39Kn5LiwtnD9hrRnPymYEO_peoYM_Q2mwX4g5aGHKo"
+  }
+]

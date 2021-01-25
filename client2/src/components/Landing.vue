@@ -90,6 +90,9 @@
             border-variant="secondary"
             align="left"
           >
+            <b-badge :key="tag" v-for="tag in item.card_tags" class="mb-2">
+              {{ tag }}
+            </b-badge>
             <b-card-text>
               {{ item.card_description }}
             </b-card-text>
@@ -107,7 +110,7 @@
                 :modalimage="item.card_image_url"
                 @click="openModal"
               >
-                Video Call Seller
+                {{ item.card_appointment_button_text }}
               </b-button>
             </span>
           </b-card>
@@ -131,7 +134,8 @@ import {
   BFormDatepicker,
   BFormTimepicker,
 } from "bootstrap-vue";
-import fakeJsonData from "../../data/cars.json";
+
+import fakeJsonData from "../../data/applicants.json";
 
 export default {
   name: "Demo",
