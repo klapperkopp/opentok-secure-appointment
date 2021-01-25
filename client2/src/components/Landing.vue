@@ -240,6 +240,10 @@ export default {
         this.$swal("Success", "The appointment has been scheduled!", "success");
         await this.fetchAppointments();
         this.updateTable();
+        window.open(
+          `${this.originApiUrl}/video?token=${appointment.hostToken}`,
+          "_blank"
+        );
         this.sendAppointmentMessage(
           result.data,
           number,
