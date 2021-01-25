@@ -170,7 +170,7 @@ export default {
       whatsappSupported: "true",
       sendSMS: "send",
       sendWhatsapp: "send",
-      phonenumber: "4915140046124",
+      phonenumber: process.env.DEFAULT_PHONE_NUMBER || "",
       cardItems: [],
     };
   },

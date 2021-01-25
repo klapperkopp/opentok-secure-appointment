@@ -28,6 +28,10 @@ export default {
         content: `Pixel Cars`,
       },
       {
+        name: "og:description",
+        content: "This is a demo showing Vonage API capabilities.",
+      },
+      {
         name: "og:url",
         content: `${process.env.VUE_APP_API_SERVER_URL}`,
       },
