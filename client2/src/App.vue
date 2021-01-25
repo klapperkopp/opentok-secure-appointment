@@ -11,6 +11,28 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 export default {
   name: "App",
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: "Pixel Cars",
+    // all titles will be injected into this template
+    titleTemplate: "%s | My Awesome Webapp",
+    meta: [
+      // { charset: 'utf-8' },
+      // { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      {
+        name: "og:image",
+        content: `${process.env.VUE_APP_API_SERVER_URL}/logo.png`,
+      },
+      {
+        name: "og:title",
+        content: `Pixel Cars`,
+      },
+      {
+        name: "og:url",
+        content: `${process.env.VUE_APP_API_SERVER_URL}`,
+      },
+    ],
+  },
   components: {
     Header,
   },

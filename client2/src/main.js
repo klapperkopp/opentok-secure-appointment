@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import VueMeta from "vue-meta";
 import VueAxios from "vue-axios";
 import axios from "axios";
 import VueSwal from "vue-swal";
@@ -14,6 +15,13 @@ import Landing from "./components/Landing";
 Vue.config.productionTip = false;
 Vue.use(VueAxios, axios);
 Vue.use(VueRouter);
+Vue.use(VueMeta, {
+  keyName: "metaInfo",
+  attribute: "data-vue-meta",
+  ssrAttribute: "data-vue-meta-server-rendered",
+  tagIDKeyName: "vmid",
+  refreshOnceOnNavigation: true,
+});
 Vue.use(VueSwal);
 Vue.use(VueClipboard);
 
