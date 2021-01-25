@@ -19,6 +19,78 @@
   },
   {
     "id": 2,
+    "card_title": "Mercedes-Benz AMG E 53",
+    "card_tags": [
+      "EZ 11/20",
+      "435 PS",
+      "Benzin",
+      "Automatik",
+      "8.000km",
+      "8.7l/100km (komb.)",
+      "200g CO2/km"
+    ],
+    "card_price": "87.300€ (inkl. MwSt.)",
+    "card_location": "Döbeln, Germany",
+    "card_description": "Mercedes-AMG E 53 4M+ +DRIVERSPACKAGE+BURMESTER+",
+    "card_appointment_button_text": "Videotermin buchen",
+    "card_image_url": "https://img.hey.car/unsafe/1024x/filters:quality(90)/https://cdn.hey.car/images/cas/c67b4b15c77cdc39b9dc003048c1cf66/original.jpg"
+  },
+  {
+    "id": 3,
+    "card_title": "Volkswagen up",
+    "card_tags": [
+      "EZ 10/19",
+      "60 PS",
+      "Benzin",
+      "Schaltgetriebe",
+      "5.000km",
+      "4.4l/100km (komb.)",
+      "100g CO2/km"
+    ],
+    "card_price": "10.950€ (inkl. MwSt.)",
+    "card_location": "Leipzig, Germany",
+    "card_description": "Move up! 1,0 l 60 PS | Klima | Sehr sparsamer Verbrauch",
+    "card_appointment_button_text": "Videotermin buchen",
+    "card_image_url": "https://img.hey.car/unsafe/1024x/filters:quality(90)/https://cdn.hey.car/images/cas/01ff35829eb19b50cb4932e185a4fabd/original.jpg"
+  },
+  {
+    "id": 4,
+    "card_title": "Renault Twizy",
+    "card_tags": [
+      "EZ 02/17",
+      "11 PS",
+      "Elektro",
+      "Automatik",
+      "2.947km",
+      "0l/100km (komb.)",
+      "0g CO2/km"
+    ],
+    "card_price": "4.990€ (inkl. MwSt.)",
+    "card_location": "Munich, Germany",
+    "card_description": "Twizy Life Tagfahrlicht/Geräuschsimulator zzgl.B",
+    "card_appointment_button_text": "Videotermin buchen",
+    "card_image_url": "https://img.hey.car/unsafe/1024x/filters:quality(90)/https://cdn.hey.car/images/cas/d80457030b119607ed7d17175873608f/original.jpg"
+  },
+  {
+    "id": 5,
+    "card_title": "Fiat 500",
+    "card_tags": [
+      "EZ 09/20",
+      "69 PS",
+      "Hybrid - Benzin",
+      "Schaltgetriebe",
+      "5km",
+      "4.1l/100km (komb.)",
+      "114 CO2/km"
+    ],
+    "card_price": "9.900€ (inkl. MwSt.)",
+    "card_location": "Bayreuth, Germany",
+    "card_description": "500 Pop Hybrid 1.0 GSE #HYBRID #KLIMA",
+    "card_appointment_button_text": "Videotermin buchen",
+    "card_image_url": "https://img.hey.car/unsafe/1024x/filters:quality(90)/https://cdn.hey.car/images/cas/23486957a428d2c072e4d1ec1c45dd11/original.jpg"
+  },
+  {
+    "id": 6,
     "card_title": "BMW i3",
     "card_tags": [
       "EZ 10/13",
@@ -36,7 +108,7 @@
     "card_image_url": "https://img.hey.car/unsafe/480x/filters:quality(90):no_upscale()/https://cdn.hey.car/images/cas/c48beb948fc0ce19a52cc73f199ceb5d/original.jpg"
   },
   {
-    "id": 3,
+    "id": 7,
     "card_title": "BMW i3",
     "card_tags": [
       "EZ 09/15",
@@ -49,26 +121,8 @@
     ],
     "card_price": "16.350€ (inkl. MwSt.)",
     "card_location": "Leipzig, Germany",
-    "card_description": "i3 REX - NAVI,PDC,SHZ,BLUETOOTH,TEMPOMAT",
+    "card_description": "i3 REX - NAVI, PDC, SHZ, BLUETOOTH, TEMPOMAT",
     "card_appointment_button_text": "Videotermin buchen",
     "card_image_url": "https://img.hey.car/unsafe/480x/filters:quality(90):no_upscale()/https://cdn.hey.car/images/cas/a6c2e11caba6db551a6d49582c79fdfb/original.jpg"
-  },
-  {
-    "id": 4,
-    "card_title": "BMW i3",
-    "card_tags": [
-      "EZ 06/15",
-      "102 PS",
-      "Elektro",
-      "Automatik",
-      "36.781km",
-      "0l/100km (komb.)",
-      "0g CO2/km"
-    ],
-    "card_price": "16.839€ (inkl. MwSt.)",
-    "card_location": "Munich, Germany",
-    "card_description": "i3 Elektro Advanced Navi Schiebe/Hebedach",
-    "card_appointment_button_text": "Videotermin buchen",
-    "card_image_url": "https://img.hey.car/unsafe/480x/filters:quality(90):no_upscale()/https://cdn.hey.car/images/cas/dd592701d6d39e47797015a29a0e4b32/original.jpg"
   }
 ]

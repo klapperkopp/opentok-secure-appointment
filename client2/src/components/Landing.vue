@@ -1,21 +1,13 @@
 <template>
   <span>
-    <div>
-      <b-button
-        id="show-btn"
-        style="margin-top: 2%"
-        variant="success"
-        @click="$bvModal.show('new-appointment-modal')"
-      >
-        New Appointment
-      </b-button>
+    <div class="mt-2">
       <b-modal
         id="new-appointment-modal"
         size="lg"
         title="New Appointment"
-        @show="resetModal"
         @hidden="resetModal"
         @ok="handleSubmit"
+        @abort="resetModal"
       >
         <span>
           <form ref="form">
@@ -24,18 +16,18 @@
               label-for="name-input"
               invalid-feedback="Name is required"
             >
-              <b-form-input id="name-input" v-model="appointmentDetails.name" />
+              <b-form-input id="name-input" v-model="appointmentDetailsName" />
             </b-form-group>
             <label for="datepicker">Choose a date</label>
             <b-form-datepicker
               id="datepicker"
-              v-model="appointmentDetails.date"
+              v-model="appointmentDetailsDate"
               class="mb-2"
             />
             <label for="timepicker">Choose time</label>
             <b-form-timepicker
               id="timepicker"
-              v-model="appointmentDetails.time"
+              v-model="appointmentDetailsTime"
               :now-button="true"
               locale="en"
               class="mb-2"
@@ -74,32 +66,47 @@
     </div>
 
     <div class="container-fluid">
-      <b-card-group
-        deck
+      <b-row
         v-if="
           cardItems != [] &&
             cardItems[0] != undefined &&
             cardItems[0].card_title
         "
       >
-        <b-card
-          v-for="item in cardItems"
-          :key="item.id"
-          :title="item.card_title"
-          :img-src="item.card_image_url"
-          :img-alt="item.card_title"
-          img-top
-          tag="article"
-          style="max-width: 20rem;"
-          class="mb-2"
-        >
-          <b-card-text>
-            {{ item.card_description }}
-          </b-card-text>
+        <div class="col-3 px-2" v-for="item in cardItems" :key="item.id">
+          <b-card
+            :key="item.id"
+            :title="item.card_title"
+            :img-src="item.card_image_url"
+            :img-alt="item.card_title"
+            img-top
+            tag="article"
+            class="my-2"
+            border-variant="secondary"
+            align="left"
+          >
+            <b-card-text>
+              {{ item.card_description }}
+            </b-card-text>
 
-          <b-button href="#" variant="primary">Go somewhere</b-button>
-        </b-card>
-      </b-card-group>
+            <b-card-text class="">
+              <b>{{ item.card_price }}</b>
+            </b-card-text>
+
+            <span class="float-right">
+              <b-button
+                id="show-btn"
+                variant="outline-primary"
+                class="btn-sm"
+                :modaltitle="item.card_title"
+                @click="openModal"
+              >
+                Video Call Seller
+              </b-button>
+            </span>
+          </b-card>
+        </div>
+      </b-row>
       <div v-else>
         <p>Loading...</p>
       </div>
@@ -140,7 +147,9 @@ export default {
   data() {
     return {
       apppointmentList: [],
-      appointmentDetails: {},
+      appointmentDetailsName: "",
+      appointmentDetailsDate: "",
+      appointmentDetailsTime: "",
       tableItems: [],
       tableHeaders: [
         "index",
@@ -154,7 +163,7 @@ export default {
       whatsappSupported: "true",
       sendSMS: "send",
       sendWhatsapp: "send",
-      phonenumber: "",
+      phonenumber: "4915140046124",
       cardItems: [],
     };
   },
@@ -192,7 +201,9 @@ export default {
     async handleSubmit() {
       console.log(
         `Form submit details: ${JSON.stringify(
-          this.appointmentDetails
+          this.appointmentDetailsName,
+          this.appointmentDetailsDate,
+          this.appointmentDetailsTime
         )}, number: ${this.phonenumber}`
       );
 
@@ -202,15 +213,15 @@ export default {
 
       try {
         const momentValue = moment();
-        momentValue.minute(this.appointmentDetails.time.substring(3, 5));
-        momentValue.hour(this.appointmentDetails.time.substring(0, 2));
-        momentValue.date(this.appointmentDetails.date);
+        momentValue.minute(this.appointmentDetailsTime.substring(3, 5));
+        momentValue.hour(this.appointmentDetailsTime.substring(0, 2));
+        momentValue.date(this.appointmentDetailsDate);
         momentValue.utc();
         console.log(`momentValue: ${momentValue}`);
 
         const body = {
           date: momentValue.toISOString(),
-          name: this.appointmentDetails.name,
+          name: this.appointmentDetailsName,
         };
 
         const result = await this.$http.post(
@@ -235,9 +246,16 @@ export default {
       }
     },
     resetModal() {
-      this.appointmentDetails = {};
+      this.appointmentDetailsName = "Test";
+      this.appointmentDetailsDate = "";
+      this.appointmentDetailsTime = "";
       this.sendSMS = "send";
-      this.phonenumber = "";
+      this.phonenumber = "4915140046124";
+    },
+    openModal(event) {
+      console.log(event.target.attributes.modaltitle.value);
+      this.appointmentDetailsName = event.target.attributes.modaltitle.value;
+      this.$bvModal.show("new-appointment-modal");
     },
     // Only SMS is supported for now
     async sendAppointmentMessage(
