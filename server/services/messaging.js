@@ -25,22 +25,28 @@ module.exports = (nexmo) => {
     },
 
     async sendWAMessage(to, params, callback) {
-      let image = await unsplash.search
-        .getPhotos({
-          query: `${params.topic}`,
-          page: 1,
-          perPage: 1,
-          orientation: "landscape",
-        })
-        .then((response) => {
-          let imageUrl = response.response.results[0].urls.regular;
+      console.log("PARAMS: ", JSON.stringify(params));
+      let image = "";
+      if (params.imageUrl) {
+        image = params.imageUrl;
+      } else {
+        image = await unsplash.search
+          .getPhotos({
+            query: `${params.topic}`,
+            page: 1,
+            perPage: 1,
+            orientation: "landscape",
+          })
+          .then((response) => {
+            let imageUrl = response.response.results[0].urls.regular;
 
-          return imageUrl;
-        })
-        .catch((e) => {
-          callback(e, { result: "UNSPLASH_ERROR" });
-        });
-      console.log("Unsplash Image Result #1: ", image);
+            return imageUrl;
+          })
+          .catch((e) => {
+            callback(e, { result: "UNSPLASH_ERROR" });
+          });
+        console.log("Unsplash Image Result #1: ", image);
+      }
 
       let whatsapp_message_body = {
         to: {

@@ -18,6 +18,11 @@
             >
               <b-form-input id="name-input" v-model="appointmentDetailsName" />
             </b-form-group>
+            <b-form-input
+              id="image-input"
+              v-model="appointmentDetailsImage"
+              hidden
+            />
             <label for="datepicker">Choose a date</label>
             <b-form-datepicker
               id="datepicker"
@@ -99,6 +104,7 @@
                 variant="outline-primary"
                 class="btn-sm"
                 :modaltitle="item.card_title"
+                :modalimage="item.card_image_url"
                 @click="openModal"
               >
                 Video Call Seller
@@ -148,6 +154,7 @@ export default {
     return {
       apppointmentList: [],
       appointmentDetailsName: "",
+      appointmentDetailsImage: "",
       appointmentDetailsDate: "",
       appointmentDetailsTime: "",
       tableItems: [],
@@ -202,6 +209,7 @@ export default {
       console.log(
         `Form submit details: ${JSON.stringify(
           this.appointmentDetailsName,
+          this.appointmentDetailsImage,
           this.appointmentDetailsDate,
           this.appointmentDetailsTime
         )}, number: ${this.phonenumber}`
@@ -210,6 +218,7 @@ export default {
       const number = this.phonenumber;
       const shouldSendSMS = this.sendSMS;
       const shouldSendWhatsapp = this.sendWhatsapp;
+      const imageUrl = this.appointmentDetailsImage;
 
       try {
         const momentValue = moment();
@@ -235,7 +244,8 @@ export default {
           result.data,
           number,
           shouldSendSMS,
-          shouldSendWhatsapp
+          shouldSendWhatsapp,
+          imageUrl
         );
       } catch (err) {
         this.$swal(
@@ -247,6 +257,7 @@ export default {
     },
     resetModal() {
       this.appointmentDetailsName = "Test";
+      this.appointmentDetailsImage = "";
       this.appointmentDetailsDate = "";
       this.appointmentDetailsTime = "";
       this.sendSMS = "send";
@@ -255,6 +266,7 @@ export default {
     openModal(event) {
       console.log(event.target.attributes.modaltitle.value);
       this.appointmentDetailsName = event.target.attributes.modaltitle.value;
+      this.appointmentDetailsImage = event.target.attributes.modalimage.value;
       this.$bvModal.show("new-appointment-modal");
     },
     // Only SMS is supported for now
@@ -262,7 +274,8 @@ export default {
       appointment,
       number,
       shouldSendSMS,
-      shouldSendWhatsapp
+      shouldSendWhatsapp,
+      imageUrl
     ) {
       const date = this.formatDate(appointment.date);
       const time = this.formatTime(appointment.date);
@@ -285,7 +298,8 @@ export default {
           time,
           `?token=${appointment.guestToken}`,
           appointment.name,
-          number
+          number,
+          imageUrl
         );
         message += `Whatsapp Result:\n${whatsappResult.message}`;
       }
@@ -300,7 +314,7 @@ export default {
     onCopy: function(e) {
       alert("Link copied: " + e.text);
     },
-    async sendWhatsappRequest(date, time, link, topic, toNumber) {
+    async sendWhatsappRequest(date, time, link, topic, toNumber, imageUrl) {
       const body = {
         channel: "WhatsApp",
         to: toNumber,
@@ -309,6 +323,7 @@ export default {
           date,
           time,
           link,
+          imageUrl,
         },
       };
 

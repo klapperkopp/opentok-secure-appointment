@@ -3,14 +3,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   configureWebpack: {
     entry: {
-      app: "./client/src/main.js",
+      app: "./client2/src/main.js",
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: path.join("client/public", "index.html"),
+        template: path.join("client2/public", "index.html"),
         filename: "index.html",
       }),
     ],
   },
-  outputDir: "client/dist",
+  outputDir: "client2/dist",
 };

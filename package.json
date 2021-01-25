@@ -1,56 +1,54 @@
 {
   "name": "opentok-appointments-server",
   "version": "0.1.0",
+  "license": "none",
   "private": true,
-  "engines": {
-    "node": "10.x"
-  },
   "scripts": {
-    "postinstall": "npm run vue-build",
+    "postinstall": "yarn vue-build",
     "server": "node ./server/bin/www",
     "server-dev": "nodemon --inspect ./server/bin/www",
     "vue-serve": "vue-cli-service serve",
     "vue-build": "vue-cli-service build",
     "vue-lint": "vue-cli-service lint",
-    "start": "NODE_ENV=production npm run server",
-    "start-dev": "concurrently --kill-others \"npm run server\" \"npm run vue-serve\""
+    "start": "NODE_ENV=production yarn server",
+    "start-dev": "concurrently --kill-others \"yarn server\" \"yarn vue-serve\""
   },
   "dependencies": {
     "@opentok/client": "^2.17.0",
-    "axios": "^0.19.2",
-    "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.7.0",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
     "concurrently": "^4.1.2",
     "connect-history-api-fallback": "^1.6.0",
     "cookie-parser": "~1.4.3",
-    "core-js": "^3.6.4",
+    "core-js": "^3.6.5",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
     "express": "~4.16.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.1",
     "morgan": "~1.9.0",
     "nexmo": "^2.6.0",
     "node-fetch": "^2.6.1",
-    "opentok": "^2.9.2",
-    "opentok-layout-js": "^3.4.0",
+    "opentok": "^2.10.0",
+    "opentok-layout-js": "^3.8.0",
     "uniqid": "^5.2.0",
     "unsplash-js": "^7.0.2",
-    "vue": "^2.6.11",
-    "vue-axios": "^2.1.5",
+    "vue": "^2.6.12",
+    "vue-axios": "^3.2.2",
     "vue-clipboard2": "^0.3.1",
-    "vue-router": "^3.1.6",
+    "vue-router": "^3.4.9",
     "vue-swal": "^1.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.2.0",
-    "@vue/cli-plugin-eslint": "^4.2.3",
-    "@vue/cli-service": "^4.2.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-prettier": "^6.0.0",
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-vue": "^6.1.2",
+    "eslint-plugin-vue": "^6.2.2",
     "html-webpack-plugin": "^4.0.1",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",
@@ -58,5 +56,24 @@
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
