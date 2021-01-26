@@ -135,7 +135,7 @@ import {
   BFormTimepicker,
 } from "bootstrap-vue";
 
-import fakeJsonData from "../../data/cars.json";
+import fakeJsonData from "../../data/applicants.json";
 
 export default {
   name: "Landing",
