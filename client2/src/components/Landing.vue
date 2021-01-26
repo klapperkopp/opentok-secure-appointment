@@ -90,7 +90,7 @@
             border-variant="secondary"
             align="left"
           >
-            <b-badge :key="tag" v-for="tag in item.card_tags" class="mb-2">
+            <b-badge :key="tag" v-for="tag in item.card_tags" class="mb-2 mr-2">
               {{ tag }}
             </b-badge>
             <b-card-text>
@@ -135,10 +135,10 @@ import {
   BFormTimepicker,
 } from "bootstrap-vue";
 
-import fakeJsonData from "../../data/applicants.json";
+import fakeJsonData from "../../data/cars.json";
 
 export default {
-  name: "Demo",
+  name: "Landing",
   components: {
     /* VueTableDynamic, */
     BButton,

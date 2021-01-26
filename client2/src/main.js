@@ -28,10 +28,10 @@ Vue.use(VueClipboard);
 Vue.use(BootstrapVue);
 
 const routes = [
+  { path: "/home", component: Landing },
   { path: "/booking", component: Booking },
   { path: "/video", component: VideoCall, query: { token: "" } },
-  { path: "/home", component: Landing },
-  { path: "*", redirect: "/booking" },
+  { path: "*", redirect: "/home" },
 ];
 
 const router = new VueRouter({
