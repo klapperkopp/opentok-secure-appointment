@@ -306,7 +306,7 @@ export default {
           date,
           time,
           `?token=${appointment.guestToken}`,
-          appointment.name,
+          "your job interview",
           number,
           imageUrl
         );
