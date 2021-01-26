@@ -265,7 +265,7 @@ export default {
       }
     },
     resetModal() {
-      this.appointmentDetailsName = "Test";
+      this.appointmentDetailsName = "";
       this.appointmentDetailsImage = "";
       this.appointmentDetailsDate = "";
       this.appointmentDetailsTime = "";

@@ -16,7 +16,7 @@
     "card_price": "",
     "card_location": "Munich, Germany",
     "card_description": "Vonage DACH+NL",
-    "card_appointment_button_text": "Book Video Call",
+    "card_appointment_button_text": "Invite for Interview",
     "card_image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHl1xDxLIYlUQ/profile-displayphoto-shrink_400_400/0/1545258331027?e=1617235200&v=beta&t=xocRw1KlH2t-hJcv0aCsz0u0tqZtxIuXyBlrU9is5bE"
   },
   {
@@ -26,7 +26,7 @@
     "card_price": "",
     "card_location": "London, UK",
     "card_description": "Vonage UK",
-    "card_appointment_button_text": "Book Video Call",
+    "card_appointment_button_text": "Invite for Interview",
     "card_image_url": "https://media-exp1.licdn.com/dms/image/C5603AQGDHaAJzw7rKw/profile-displayphoto-shrink_400_400/0/1589277512881?e=1617235200&v=beta&t=KIvspb1bUnimCKMy2GcIEqg1KBb7m0qGiXImrL9ln_Y"
   },
   {
@@ -36,7 +36,7 @@
     "card_price": "",
     "card_location": "Berlin, Germany",
     "card_description": "Vonage EMEA",
-    "card_appointment_button_text": "Book Video Call",
+    "card_appointment_button_text": "Invite for Interview",
     "card_image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQGtaacqxAA1Zw/profile-displayphoto-shrink_400_400/0/1573676834766?e=1617235200&v=beta&t=sQusj1LZAeQeNSi61D9uakyS51NHDJJOYP5Q7U_VBN4"
   },
   {
@@ -46,7 +46,7 @@
     "card_price": "",
     "card_location": "Munich, Germany",
     "card_description": "Vonage DACH + NL + CIS",
-    "card_appointment_button_text": "Book Video Call",
+    "card_appointment_button_text": "Invite for Interview",
     "card_image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHOtLFucfFI9g/profile-displayphoto-shrink_400_400/0/1598343744832?e=1617235200&v=beta&t=1FGDbHM9cDd8USM6FVgutAXcXV6DIZ3xhbARjV0gYMo"
   },
   {
@@ -56,7 +56,7 @@
     "card_price": "",
     "card_location": "Berlin, Germany",
     "card_description": "Vonage DACH",
-    "card_appointment_button_text": "Book Video Call",
+    "card_appointment_button_text": "Invite for Interview",
     "card_image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQF4rLzKwVIOKA/profile-displayphoto-shrink_400_400/0/1569601093433?e=1617235200&v=beta&t=TTGCT6YawTIOb1Bh8waloWuoQ-g2ihFUgo6C7CkiFRo"
   },
   {
@@ -66,7 +66,7 @@
     "card_price": "",
     "card_location": "Berlin, Germany",
     "card_description": "Vonage DACH",
-    "card_appointment_button_text": "Book Video Call",
+    "card_appointment_button_text": "Invite for Interview",
     "card_image_url": "https://media-exp1.licdn.com/dms/image/C4E03AQFW56D2kPGUaw/profile-displayphoto-shrink_400_400/0/1610726962274?e=1617235200&v=beta&t=w39Kn5LiwtnD9hrRnPymYEO_peoYM_Q2mwX4g5aGHKo"
   }
 ]
